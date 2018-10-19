@@ -1,0 +1,11 @@
+// Copyright (C) 2018 Rimeto, LLC. All Rights Reserved.
+
+// Incorrect case insensitive sort
+import * as Zed from 'fs';
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+import * as ahh from 'net'
+~~~~~~~~~~~~~~~~~~~~~~~~~~ [Import sources within group must be sorted by name.]
+
+// Correct case insensitive sort
+import * as ahh from 'net';
+import * as FS from 'fs';
