@@ -6,22 +6,19 @@
   "repository": "\"git+https://github.com/rimeto/tslint-rimeto.git\"",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && tsc && babel ./dist -d ./dist --presets=es2015",
+    "build": "rm -rf dist && tsc",
     "clean": "rm -rf dist node_modules",
     "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
     "postcheckout": "yarn",
     "postmerge": "npm run postcheckout",
     "postrebase": "npm run postcheckout",
-    "precommit": "npm run lint && npm run dist && git add dist",
+    "precommit": "npm run lint && npm run build && git add dist",
     "test": "yarn tslint --test src/__tests__",
     "watch": "tsc --watch"
   },
   "dependencies": {
     "@types/lodash": "^4.14.117",
     "@types/node": "^10.12.0",
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "lodash": "^4.17.11",
     "tslint": "^5.11.0",
     "typescript": "^3.1.3"
