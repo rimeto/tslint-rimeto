@@ -13,7 +13,7 @@
     "postmerge": "npm run postcheckout",
     "postrebase": "npm run postcheckout",
     "prepublishOnly": "yarn build",
-    "test": "yarn tslint --test src/__tests__",
+    "test": "yarn tslint --test src/rules/__tests__",
     "watch": "tsc --watch"
   },
   "dependencies": {
