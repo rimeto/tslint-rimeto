@@ -1,0 +1,31 @@
+{
+    "extends": ["tslint:latest"],
+    "rulesDirectory": "./dist/rules",
+    "rules": {
+        "jsx-wrap-multiline": false,
+        "member-ordering": [false],
+        "no-consecutive-blank-lines": [true, 2],
+        "no-console": [true, "log"],
+        "no-empty-interface": false,
+        "no-implicit-dependencies": [true, "dev"],
+        "no-require-imports": false,
+        "no-var-requires": false,
+        "object-literal-sort-keys": false,
+        "sorted-imports": true,
+        "ordered-imports": [
+          true,
+          {
+            "import-sources-order": "any",
+            "named-imports-order": "case-insensitive"
+          }
+        ],
+        "quotemark": [true, "single", "jsx-double"],
+        "variable-name": [
+          true,
+          "ban-keywords",
+          "check-format",
+          "allow-leading-underscore",
+          "allow-pascal-case"
+        ]
+    }
+}

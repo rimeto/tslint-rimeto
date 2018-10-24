@@ -1,0 +1,51 @@
+{
+  "name": "tslint-rimeto",
+  "version": "0.1.1",
+  "description": "Rimeto tslint rules",
+  "main": "tslint-rimeto.json",
+  "repository": "\"git+https://github.com/rimeto/tslint-rimeto.git\"",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "clean": "rm -rf dist node_modules",
+    "lint": "tslint -c ./tslint.json 'src/**/*.ts'",
+    "postcheckout": "yarn",
+    "postmerge": "npm run postcheckout",
+    "postrebase": "npm run postcheckout",
+    "precommit": "lint-staged",
+    "prepublishOnly": "yarn build",
+    "test": "yarn tslint --test src/rules/__tests__",
+    "watch": "tsc --watch"
+  },
+  "lint-staged": {
+    "concurrent": false,
+    "linters": {
+      "*.{ts,tsx}": [
+        "prettier --write",
+        "tslint -c ./tslint.json --fix",
+        "git add"
+      ]
+    }
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/lodash": "^4.14.117",
+    "@types/node": "^10.12.0",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "lodash": "^4.17.11",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.0"
+  },
+  "peerDependencies": {
+    "lodash": ">=4.17.0",
+    "tslint": ">=5.1.0",
+    "typescript": ">=2.9.0"
+  }
+}
