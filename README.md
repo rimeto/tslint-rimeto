@@ -26,6 +26,28 @@ Enforces a case-insensitive sort of imports within groups. Inclues an autofix fo
 
 3) Run `tslint` with `--fix` to autofix existing issues.
 
+## Examples
+
+Autofixes unsorted input like,
+        
+        import * as Immutable from 'immutable';	
+        import * as React from 'react';	
+        import * as _ from 'lodash';	
+
+        import RoutePath from '../../constants/RoutePath';
+        import IAddress from '../../ifs/IAddress';
+
+to be,
+
+        import * as _ from 'lodash';
+        import * as Immutable from 'immutable';
+        import * as React from 'react';
+
+        import IAddress from '../../ifs/IAddress';
+        import RoutePath from '../../constants/RoutePath';
+
+maintaining grouping and sorting within them.
+
 
 ## License
 
