@@ -1,9 +1,12 @@
 {
   "name": "tslint-rimeto",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "Rimeto tslint rules",
   "main": "tslint-rimeto.json",
-  "repository": "\"git+https://github.com/rimeto/tslint-rimeto.git\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rimeto/tslint-rimeto.git"
+  },
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && tsc",
