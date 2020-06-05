@@ -1,4 +1,6 @@
 # tslint-rimeto
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frimeto%2Ftslint-rimeto.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Frimeto%2Ftslint-rimeto?ref=badge_shield)
+
 
 <br>
 
@@ -52,3 +54,6 @@ maintaining grouping and sorting within them.
 ## License
 
 tslint-rimeto is [MIT licensed](./LICENSE).
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frimeto%2Ftslint-rimeto.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Frimeto%2Ftslint-rimeto?ref=badge_large)
