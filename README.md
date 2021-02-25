@@ -1,3 +1,7 @@
+----
+**This project is now deprecated.**
+----
+
 # tslint-rimeto
 
 <br>
